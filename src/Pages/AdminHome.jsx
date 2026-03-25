@@ -136,11 +136,11 @@ const AdminHome = () => {
                   Products
                 </NavLink>
               </li>
-              <li className="nav-item mb-2">
+              {/* <li className="nav-item mb-2">
                 <NavLink to="/orders" className="nav-link text-white">
                   Orders
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item mb-2">
                 <NavLink to="/users" className="nav-link text-white">
                   Users
