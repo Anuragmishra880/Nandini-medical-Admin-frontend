@@ -20,7 +20,7 @@ const Products = () => {
 
   // delete product logics
   const deleteProduct = async (id) => {
-    console.log("Deleting id:", id);
+   
     const confirmDelete = window.confirm("Delete this product?");
 
     if (!confirmDelete) return;
@@ -30,9 +30,9 @@ const Products = () => {
         method: "DELETE",
         credentials: "include",
       });
-      console.log("Status:", res.status);
+     
       const result = await res.json();
- console.log("Response:", result);
+ 
       alert(result.message);
 
       // UI update

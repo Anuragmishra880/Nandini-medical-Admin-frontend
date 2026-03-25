@@ -1,0 +1,12 @@
+.container h2,
+h3,
+p {
+    text-align: center;
+}
+
+.backHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

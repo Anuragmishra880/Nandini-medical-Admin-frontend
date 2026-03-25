@@ -40,7 +40,7 @@ const AddProduct = () => {
         },
       );
       const result = await res.json();
-      console.log("Product added:", result);
+     
       alert("Product added successfully!");
 
       setProducts({

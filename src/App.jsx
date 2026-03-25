@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { getCurrentUser } from "./store/authAction";
 import { useDispatch } from "react-redux";
 import { ViewProduct } from "./Pages/ViewProduct";
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" element={<AdminLogin />} />
         <Route path="/admin/edit-product/:id" element={<UpdateProduct />} />
         <Route path="/admin/view-product/:id" element={<ViewProduct />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );

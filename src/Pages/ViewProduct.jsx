@@ -14,9 +14,8 @@ export const ViewProduct = () => {
         method: "DELETE",
         credentials: "include",
       });
-      console.log("Status:", res.status);
+    
       const result = await res.json();
-      console.log("Response:", result);
       alert(result.message);
 
       // UI update

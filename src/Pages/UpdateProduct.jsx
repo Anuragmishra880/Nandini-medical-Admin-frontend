@@ -41,7 +41,7 @@ const UpdateProduct = () => {
         credentials: "include",
       });
       const result = await res.json();
-      console.log("Product updated:", result);
+ 
       alert("Product updated successfully!");
       setProducts({
         productTitle: "",
